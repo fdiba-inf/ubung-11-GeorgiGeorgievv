@@ -11,7 +11,7 @@ public class LinkedStack {
 
     public void push(String data) {
         // Push element to stack
-        Node newNode = new Node(data);
+      Node newNode = new Node(data);
 
         if(isEmpty()){
           topNode = newNode;
@@ -24,7 +24,6 @@ public class LinkedStack {
 
     public String pop() {
         // Pop element from stack
-        return null;
         
         if(isEmpty()){
           return null;

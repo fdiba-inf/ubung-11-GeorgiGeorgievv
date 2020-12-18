@@ -7,16 +7,15 @@ public class LinkedQueue {
     public boolean isEmpty() {
         // Check if queue has no elements
         return false;
-        return frontNode == null;
-
+       return frontNode == null;
     }
 
     public void offer(String data) {
         // Offer element to queue
-         Node newNode = new Node(data);
+      Node newNode = new Node(data);
        if(isEmpty()){
          frontNode = newNode;
-         backNode = frontNode; 
+         backNode = frontNode; //reference to object
        }
        else{
          backNode.setNextNode(newNode);
@@ -26,8 +25,7 @@ public class LinkedQueue {
 
     public String poll() {
         // Poll element from queue
-        return null;
-        
+      
         if(isEmpty()){
           return null;
         }
