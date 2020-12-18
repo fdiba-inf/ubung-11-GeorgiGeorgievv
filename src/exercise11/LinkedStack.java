@@ -5,7 +5,6 @@ public class LinkedStack {
 
     public boolean isEmpty() {
         // Check if stack has no elements
-        return false;
         return topNode == null;
     }
 
@@ -24,7 +23,7 @@ public class LinkedStack {
 
     public String pop() {
         // Pop element from stack
-        
+       
         if(isEmpty()){
           return null;
         }
